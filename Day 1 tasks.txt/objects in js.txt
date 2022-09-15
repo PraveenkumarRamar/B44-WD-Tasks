@@ -1,0 +1,16 @@
+Objects are important datatypes in Javascript and it more different than the primitive 
+data types.Primitive data types are(number, string, boolean,etc......).In primitive data
+type it can  hold only one value,but Objects data types can hold many values by key:value 
+These are variables called function and methods,every object have some properties,
+the properties associated with some values,the values are accessed 
+by property names.
+
+for example
+var myPhone = new object();
+myPhone.name ="oppo";
+myPhone.year = 2021;
+
+the values are accessed by the keys;
+myPhone.year
+output;
+2021
