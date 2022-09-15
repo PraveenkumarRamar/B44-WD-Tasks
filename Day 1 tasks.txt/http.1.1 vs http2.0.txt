@@ -1,0 +1,26 @@
+What is http?
+
+http = hypertext transfer protocol;
+It is created in 1997(http 1.1) and later developed in 2015(http 2.0)SPDY protocol.
+
+The user sent the request to server and the server response to the request.
+
+The http is network delay sensitive it senses that if there is less  network delay
+the page loads more faster.Then http 2.0 is discovered and the http 2.0 is more faster 
+than http 1.1 ,because multiplexing is used.
+------------------------------------------------------------------------------------------------
+HTTP 1.1;
+
+1.It works on the textual format;
+2.Head of line blocking ,TCP connection blocked all other request until the response 
+doesn't receive. all other information related to the header file is repeated in every 
+request.
+3.It uses request resource inlining for getting multiple pages.
+4.It compresses the data by itself.
+
+HTTP 2.0;
+
+1.It works on the binary number.
+2.it uses multiplexing so one TCP connection required for multiple requests.
+3.it uses PUSH frame for collecting multiple pages like CSS,HTML,Javascript;
+4.It uses PHACk for compresses the data.
