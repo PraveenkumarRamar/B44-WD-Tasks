@@ -1,0 +1,30 @@
+Window and document...
+
+Window and document have different properties and objects.
+
+DOCUMENT...
+
+1.document objects can be represent a web page that loaded in the browser.
+2.by accessing the document object,we can access the element in the html document,
+   with the help of document objects.
+3.we can add dynamic content to our web page.
+4.we can access the document object by window.document.
+5.it is object of window property.
+6.it loads inside the window.
+7.the document is the part of BOM and DOM.
+8.all the tags,body in the element are in html in part of the document.
+properties of the document objects are accessed by the window.document.title
+9.syntax:document.propertyname;
+
+WINDOW...
+
+1.window object are represented a window or a frame displays the content.
+2.we can access the window object by window.window.
+3.it is object of browser.
+4.its first objects that loads in the browser.
+5.it is part of BOM not DOM
+6.global objects, variables and functions are the part of the window.
+7.syntax:window.propertyname;
+8.properties of the window object cant be accessed by the document.object  
+
+
