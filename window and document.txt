@@ -20,7 +20,7 @@ WINDOW...
 
 1.window object are represented a window or a frame displays the content.
 2.we can access the window object by window.window.
-3.it is object of browser.
+3.it is obje ct of browser.
 4.its first objects that loads in the browser.
 5.it is part of BOM not DOM
 6.global objects, variables and functions are the part of the window.
