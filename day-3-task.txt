@@ -1,0 +1,73 @@
+============================================JSON=================================
+
+var car = {
+    "Name" : "Audi",
+    "Type" : "A5",
+    "Color" : "Black",
+    "Mileage" : "15",
+}
+car.TopSpeed = "260+"
+console.log(car)
+
+for(var details in car){
+    console.log(details,"=" ,car[details])
+}
+
+===============================================JSON-RESUME-DATA=====================
+
+
+var RESUME = {
+
+    "Name"                        :   "Praveenkumar R",
+    "Father Name"                 :   "Ramar",
+    "Mother Name"                 :   "Parimala",
+    "D.O.B"                       :   "12-05-2001",
+    "Age"                         :   "21",
+    "Gender"                      :   "Male",
+    "SSLC"                        :   "76%",
+    "HSC"                         :   "68%",
+    "Nationality"                 :   "Indian",
+    "Qualification"               :   "B.Tech.,(INFORMATION TECHNOLOGY)",
+    "Experience"                  :   "Fresher",
+    "Skills"                      :   "HTML-5,CSS3,Javascript,Bootstrap,ReactJS,NodeJS,MongoDB,SQL,Python and Java in intermediate level",
+    "Course"                      :   "Full Stack Development in GUVIGEEK Private ltd",
+    "Language's"                  :   "English,Tamil,(Speak and Write)",
+    "Interests and Hobbies"       :   "Reading Books,Learning something New",
+
+}
+console.log(RESUME)
+
+===============================================================================================
+Difference between Window and Document and Screen;
+
+WINDOW ;
+
+It represent the browser window,it is first of js object,
+All the global objects,functions and variables are the members of the Javascript;
+The window is the first thing when the browser gets loaded.
+The window object has the majority of properties like length,innerHeight,innerWidth,name.
+The window object represents the browser context.
+It holds things like window.location,window.status,window.Screen,window.history.
+
+window.window;
+window.window.window;
+window.window.window.window;
+
+DOCUMENT;
+
+The document interface represents the any web page loaded in the browser,
+  it serves the entry point at web page's content.
+It goes to DOM tree and it loaded in web page
+It becomes document object.
+it loaded in window object.
+its properties are like title,URL and cookies etc
+
+SCREEN;
+
+screen is the small information object.
+It is used to display screen length,height,colorWidth,pixelsWidth;
+its not mandatory to give window prefix
+
+screen.width;
+screen.height;
+screen.colorWidth;
