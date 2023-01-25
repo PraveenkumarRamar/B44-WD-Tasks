@@ -1,0 +1,52 @@
+HOw to compare two JSON objects having the same properties without order======
+
+let obj  = {
+    "Name" : "Praveen",
+    "Age"  : "22"
+}
+let obj1 = {
+        "Age"  : "22",
+        "Name" : "Praveen"
+}
+console.log(JSON.stringify(obj)==JSON.stringify(obj1))---//False
+
+===================================================================
+XMLHttpRequest//
+Restcountries names,region,subregion,Population//
+
+var req = new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v2/all");
+req.send();
+req.onload = function(){
+    var res = JSON.parse(req.response);
+    console.log(res)
+    for(var i of res){
+
+        console.log("Name :" +i.name)
+        console.log("Region :" +i.region)
+        console.log("Sub-region :" +i.subregion)
+        console.log("Population :" +i.population)
+        console.log(" ")
+    }
+}
+============================================================================================================
+XMLHttpRequest//
+Restcountries flag
+
+
+var req = new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v2/all");
+req.send();
+req.onload = function(){
+    var res = JSON.parse(req.response);
+    console.log(res)
+    for(var i of res){
+
+        console.log(i.name+" "+i.flag)
+        // console.log("Name :" +i.name)
+        // console.log("Region :" +i.region)
+        // console.log("Sub-region :" +i.subregion)
+        // console.log("Population :" +i.population)
+        // console.log(" ")
+    }
+}
