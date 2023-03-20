@@ -37,6 +37,30 @@ var RESUME = {
 }
 console.log(RESUME)
 
+// For loop
+var array = [1,2,3,4,5,6,7];
+for(var i=0 ; i<array.length ; i++){
+    console.log("Index ",i,"Value ",array[i])
+}
+
+// For in loop
+
+for(var i in array){
+    console.log("Index ",i,"Value ",array[i])
+}
+
+// for of loop
+
+for(var val of array){
+    console.log("Value ",val)
+}
+
+// forEach loop
+
+array.forEach((number,index,array)=>{
+    console.log("Index ",index," Value ", number,"Index ",value,"Value",array[index])
+})
+
 ===============================================================================================
 Difference between Window and Document and Screen;
 
