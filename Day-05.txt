@@ -1,0 +1,132 @@
+  IIFE function 
+Print all prime numbers in the Array
+
+((arr) => {
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i])
+        }
+    }
+})([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+
+Print the sum of all numbers in the given array
+
+((arr) => {
+    let sum = 0
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+    console.log(sum)   //output of this function is 110
+})([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+
+Print all odd numbers in the given array
+((arr) => {
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+    // console.log(sum)
+})([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+Return all the palindromes in an array
+
+((arr) => {
+    for(let i of arr){
+        var split = i.split("").reverse();
+        var res = split.join("")
+        if(i==res){
+            console.log("Palindromes")
+        }else{
+            console.log("Not a palindromes")
+        }
+    }
+})(["praveen" ,"ramar" ,"madam" ,"malayalam"])
+
+
+Convert all the strings to title caps in a string arr
+
+(function(arr) {
+var res = [];
+var arrr ;
+        for(var i in arr){
+        arrr = arr[i][0].toUpperCase() + arr[i].slice(1,);
+        res.push(arrr);   
+        }
+    console.log(res)
+
+})(["praveen" ,"ramar" ,"madam" ,"mal"])
+
+================================================================================================================================
+
+Arrow function
+
+Print all prime numbers in the Array
+
+var a = (arr) => {
+    for(var i in arr){
+        if(arr[i]%2!=0){
+            console.log(arr[i])
+        }
+    }
+}
+a([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+
+
+
+Print the sum of all numbers in the given array
+
+var b =(arr) => {
+    let sum = 0
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+    console.log(sum)   //output of this function is 110
+}
+b([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+
+Print all odd numbers in the given array
+
+var c = (arr) => {
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+    // console.log(sum)
+}
+c([1,2,3,4,5,6,7,8,9,10,11,2,13,14,15])
+
+
+Return all the palindromes in an array
+
+var d = (arr) => {
+    for(let i of arr){
+        var split = i.split("").reverse();
+        var res = split.join("")
+        if(i==res){
+            console.log("Palindromes")
+        }else{
+            console.log("Not a palindromes")
+        }
+    }
+}
+d(["praveen" ,"ramar" ,"madam" ,"malayalam"])
+
+Convert all the strings to title caps in a string arr
+
+var e = (arr) => {
+var res = [];
+var arrr ;
+        for(var i in arr){
+        arrr = arr[i][0].toUpperCase() + arr[i].slice(1,);
+        res.push(arrr);   
+        }
+    console.log(res)
+
+}
+e(["praveen" ,"ramar" ,"madam" ,"mal"])
