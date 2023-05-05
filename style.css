@@ -1,0 +1,13 @@
+.main{
+text-align: center;
+margin-top: 15rem;
+background-color: black;
+color: grey;
+font-size: xx-large;
+padding: 5rem;
+}
+.main:hover{
+    background-color: grey;
+    color: black;
+    transition: 0.8s;
+}
