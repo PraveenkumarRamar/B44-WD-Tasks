@@ -18,7 +18,7 @@ properties of the document objects are accessed by the window.document.title
 
 WINDOW...
 
-1.window object are represented a window or a frame displays the content.
+1. window object are represented a window or a frame displays the content.
 2.we can access the window object by window.window.
 3.it is obje ct of browser.
 4.its first objects that loads in the browser.
@@ -27,4 +27,26 @@ WINDOW...
 7.syntax:window.propertyname;
 8.properties of the window object cant be accessed by the document.object  
 
+A clear understanding of Browser Object Model (BOM) and Document Object Model(DOM) resolves the problem.
+
+Browser Object Model (BOM)
+The Browser Object Model contains objects that represent the current browser window or tab. The topmost object in the BOM is the window object representing the window or tab or an iframe sometimes. Window object has properties like browser history, location and the device’s screen etc. In case of multi tab browser, a window object represents a single tab, but some of its properties like innerHeight, innerWidth and methods like resizeTo() will affect the whole browser window.
+
+Document Object Model
+When a web page is loaded, the browser creates a Document Object Model of the page. The document object represents the whole html document as a tree of Objects(HTML, HEAD, BODY, and other HTML tags). It is the root element that represents the html document.
+
+Screen
+
+Screen is the window property that holds information of browser screen. It refers to screen object associated with that window object. Used to display screen width, height, colorDepth, pixelDepth etc
+
+Similar to document screen can be accessed either by window.screen or screen object directly. Screen object doesn't have any methods as in window and document objects.
+
+Window Vs Document
+Window object : It is the top most object and outermost element of the object hierarchy as shown in Figure 1.
+
+Document object : Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page. Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page
+
+The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window.
+
+You can access a document object either using window.document property or using document object directly as window is global object. In the below example, title is the property of document object
 
